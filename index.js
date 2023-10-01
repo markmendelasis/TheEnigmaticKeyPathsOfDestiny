@@ -88,12 +88,14 @@ $(".buttonOption").click(function () {
 
 
     case "firstChoice3":
+        pageTurn.play();
         $("#thirdOption").slideUp("slow");
         $("#firstOption3").fadeIn("slow");
 
     break;
     
     case "secondChoice3":
+        pageTurn.play();
         $("#thirdOption").slideUp("slow");
         $("#secondOption3").fadeIn("slow");
 
