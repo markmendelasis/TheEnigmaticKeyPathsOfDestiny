@@ -1,9 +1,21 @@
+
+// This sound effects are from pixabay.com
+var soundEffectBeginning = new Audio('resources/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423.mp3');
+var creakyDoor = new Audio('resources/door-2-6841.mp3');
+var pageTurn = new Audio('resources/pageturn-102978.mp3');
+
+
+
+soundEffectBeginning.loop = true;
 var play = $(".button-89");
 
 play.click(function () {
-    $("#startButton").css("display", "none")
-    $("#beginning").css("display", "block");
+    $(".tutorial").fadeOut("slow");
+    $("#startButton").fadeOut("slow");
+    $("#beginning").fadeIn("slow");
+    soundEffectBeginning.play();
 });
+
 
 
 $(".buttonOption").click(function () {
@@ -16,50 +28,57 @@ $(".buttonOption").click(function () {
     // Amelia decides to enter the mansion.
 
     case "firstOption0":
-        $("#beginning").css("display", "none");
-        $("#firstOption").css("display", "block");
+        creakyDoor.play();
+        $("#beginning").slideUp("slow");
+        $("#firstOption").fadeIn("slow");
        
     break;
 
     // Amelia decides to search for more information.
 
     case "secondOption0":
-        $("#beginning").css("display", "none");
-        $("#secondOption").css("display", "block");
+        pageTurn.play();
+        $("#beginning").slideUp("slow");
+        $("#secondOption").fadeIn("slow");
 
     break;
 
     // Amelia decides to leave the town and forget about the key.
 
     case "thirdOption0":
-        $("#beginning").css("display", "none");
-        $("#thirdOption").css("display", "block");
+        pageTurn.play();
+        $("#beginning").slideUp("slow");
+        $("#thirdOption").fadeIn("slow");
 
     break;
 
 
-
+    // Amelia flees the mansion
     case "firstChoice":
-        $("#firstOption").css("display", "none");
-        $("#firstOption1").css("display", "block");
+        pageTurn.play();
+        $("#firstOption").slideUp("slow");
+        $("#firstOption1").fadeIn("slow");
 
     break;
 
     case "secondChoice":
-        $("#firstOption").css("display", "none");
-        $("#secondOption1").css("display", "block");
+        pageTurn.play();
+        $("#firstOption").slideUp("slow");
+        $("#secondOption1").fadeIn("slow");
 
     break;
 
     case "firstChoice2":
-        $("#secondOption").css("display", "none");
-        $("#firstOption2").css("display", "block");
+        pageTurn.play();
+        $("#secondOption").slideUp("slow");
+        $("#firstOption2").fadeIn("slow");
 
     break;
 
     case "secondChoice2":
-        $("#secondOption").css("display", "none");
-        $("#secondOption2").css("display", "block");
+        pageTurn.play();
+        $("#secondOption").slideUp("slow");
+        $("#secondOption2").fadeIn("slow");
 
     break;
 
@@ -69,14 +88,14 @@ $(".buttonOption").click(function () {
 
 
     case "firstChoice3":
-        $("#thirdOption").css("display", "none");
-        $("#firstOption3").css("display", "block");
+        $("#thirdOption").slideUp("slow");
+        $("#firstOption3").fadeIn("slow");
 
     break;
     
     case "secondChoice3":
-        $("#thirdOption").css("display", "none");
-        $("#secondOption3").css("display", "block");
+        $("#thirdOption").slideUp("slow");
+        $("#secondOption3").fadeIn("slow");
 
     break;
 
