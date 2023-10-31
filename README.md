@@ -16,12 +16,12 @@ cd interactive-text-adventure
 
 Open index.html in your web browser to start playing the game.
 
-Features
+<h1>Features</h1>
 Engaging and immersive interactive storylines.
 User-friendly interface for making choices.
 Multiple story paths and endings to explore.
 Sound effects enhancing the gaming experience.
 
-Contributing
+<h1>Contributing</h1>
 Contributions are welcome! If you have ideas...
 
