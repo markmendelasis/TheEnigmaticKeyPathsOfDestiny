@@ -15,7 +15,9 @@ git clone https://github.com/your-username/interactive-text-adventure.git
 cd interactive-text-adventure
 Open index.html in your web browser to start playing the game
 
-  ## Features
+### Horizontal Line
+
+## Features
 
 -Engaging and immersive interactive storylines.
 -User-friendly interface for making choices.
